@@ -106,13 +106,3 @@ insert into ev_evento (
     1,
     1
 );
-
-select
-    pe_pessoa.*, eq_equipe.nome
-from
-    pe_pessoa
-inner join
-    eq_equipe
-inner join
-    pe_eq_pessoa_equipe pepe
-on eq_equipe.eq_id = pepe.pe_eq_equipe;

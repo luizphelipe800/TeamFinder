@@ -1,0 +1,1 @@
+export CLASS_PATH=$(pwd)/mysql-connector-java-5.1.49-bin.jar:$CLASS_PATH
