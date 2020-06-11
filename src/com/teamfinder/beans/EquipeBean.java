@@ -4,12 +4,14 @@ import java.io.Serializable;
 
 public class EquipeBean implements Serializable{
 
-    private int id;
+    private int id, pessoaId;
     private String nome;
+    private PessoaBean pessoa;
     
-    public EquipeBean(int id_eb, String nome_eb){
+    public EquipeBean(int id_eb, String nome_eb, int pessoaId){
         this.id = id_eb;
         this.nome = nome_eb;
+        this.pessoaId = pessoaId;
     }
 
     /**
@@ -40,6 +42,21 @@ public class EquipeBean implements Serializable{
         this.nome = nome;
     }
 
+    public void setPessoaId(int pessoaId){
+        this.pessoaId = pessoaId;
+    }
+
+    public int getPessoaId(){
+        return this.pessoaId;
+    }
+
+    public void setPessoa(PessoaBean pessoa){
+        this.pessoa = pessoa;
+    }
+
+    public PessoaBean getPessoa(){
+        return this.pessoa;
+    }
 
     
 }

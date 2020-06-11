@@ -2,15 +2,15 @@ package com.teamfinder.beans;
 
 import java.io.Serializable;
 
-public class LiderBean  implements Serializable{
+public class EventoEquipe  implements Serializable{
     
-    private int id, pessoaId, equipeId;
-    private PessoaBean pessoa;
+    private int id, eventoId, equipeId;
+    private EventoBean evento;
     private EquipeBean equipe;
 
-    public LiderBean (int idl, int pessoaId, int equipeId, String nomel){
+    public EventoEquipe (int idl, int eventoId, int equipeId, String nomel){
         this.id = idl;
-        this.pessoaId = pessoaId;
+        this.eventoId = eventoId;
         this.equipeId = equipeId;
     }
 
@@ -28,12 +28,12 @@ public class LiderBean  implements Serializable{
         this.id = id;
     }
 
-    public void setPessoaId(int pessoaId){
-        this.pessoaId = pessoaId;
+    public void setEventoId(int eventoId){
+        this.eventoId = eventoId;
     }
 
-    public int getPessoaId(){
-        return this.pessoaId;
+    public int getEventoId(){
+        return this.eventoId;
     }
 
     public void setEquipeId(int equipeId){
@@ -44,12 +44,12 @@ public class LiderBean  implements Serializable{
         return this.equipeId;
     }
 
-    public void setPessoa(PessoaBean pessoa){
-        this.pessoa = pessoa;
+    public void setEvento(EventoBean evento){
+        this.evento = evento;
     }
 
-    public PessoaBean getPessoa(){
-        return this.pessoa;
+    public EventoBean getEvento(){
+        return this.evento;
     }
 
     public void setEquipe(EquipeBean equipe){

@@ -53,4 +53,16 @@ public class EventoDao {
 
         return evento;
     }
+
+    public void inserir(EventoBean evento) throws SQLException {
+        String sql = "INSERT INTO ev_evento (ev_nome, ev_endereco_id, ev_equipe_id) VALUES (?, ?, ?)";
+        PreparedStatement stmt = banco.prepareStatement(sql, Statement.NO_GENERATED_KEYS);
+
+        stmt.setString(1, evento.getNome());
+        stmt.setInt(2, evento.getEnderecoId());
+        stmt.setInt(3, evento.getEquipeId());
+
+        stmt.executeUpdate();
+        stmt.close();
+    }
 }

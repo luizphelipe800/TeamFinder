@@ -4,16 +4,16 @@ import java.io.Serializable;
 
 public class EventoBean implements Serializable{
 
-    private int id, enderecoId, equipeId;
+    private int id, enderecoId, pessoaId;
     private String nome;
     private EnderecoBean endereco;
-    private EquipeBean equipe;
+    private PessoaBean pessoa;
 
-    public EventoBean(int id, String nome, int enderecoId, int equipeId){
+    public EventoBean(int id, String nome, int enderecoId, int pessoaId){
         this.id = id;
         this.nome = nome;
         this.enderecoId = enderecoId;
-        this.equipeId = enderecoId;
+        this.pessoaId = pessoaId;
     }
 
     public void setId(int id){
@@ -40,12 +40,12 @@ public class EventoBean implements Serializable{
         return this.enderecoId;
     }
 
-    public void setEquipeId(int equipeId){
-        this.equipeId = equipeId;
+    public void setPessoaId(int pessoaId){
+        this.pessoaId = pessoaId;
     }
 
-    public int getEquipeId(){
-        return this.equipeId;
+    public int getPessoaId(){
+        return this.pessoaId;
     }
 
     public void setEndereco(EnderecoBean endereco){
@@ -56,11 +56,11 @@ public class EventoBean implements Serializable{
         return this.endereco;
     }
 
-    public void setEquipe(EquipeBean equipe){
-        this.equipe = equipe;
+    public void setPessoa(PessoaBean pessoa){
+        this.pessoa = pessoa;
     }
 
-    public EquipeBean getEquipe(){
-        return this.equipe;
+    public PessoaBean getPessoa(){
+        return this.pessoa;
     }
 }
