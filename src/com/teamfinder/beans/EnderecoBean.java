@@ -1,4 +1,4 @@
-package com.teamfinder.BEANS;
+package com.teamfinder.beans;
 
 import java.io.Serializable;
 
@@ -7,10 +7,10 @@ public class EnderecoBean implements Serializable{
     private int id;
     private String cep;
     private String logradouro;
-    private String numero;
+    private int numero;
     private String complemento;
 
-    public EnderecoBean(int id, String cep, String logradouro, String numero, String complemento){
+    public EnderecoBean(int id, String cep, String logradouro, int numero, String complemento){
         this.id = id;
         this.cep = cep;
         this.logradouro = logradouro;
@@ -42,11 +42,11 @@ public class EnderecoBean implements Serializable{
         return this.logradouro;
     }
 
-    public void setNumero(String numero){
+    public void setNumero(int numero){
         this.numero = numero;
     }
 
-    public String getNumero(){
+    public int getNumero(){
         return this.numero;
     }
 

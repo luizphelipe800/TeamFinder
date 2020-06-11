@@ -34,10 +34,10 @@ create table li_lider (
 
 create table en_endereco (
 	en_id int NOT NULL AUTO_INCREMENT,
-	en_cep int(8) NOT NULL,
+	en_cep varchar(8) NOT NULL,
 	en_Logradouro varchar(50) NOT NULL,
-	en_numero char(5) NOT NULL,
-	en_complemento varchar(50) NOT NULL,
+	en_numero int NOT NULL,
+	en_complemento varchar(50),
 	PRIMARY KEY (en_id)
 );
 

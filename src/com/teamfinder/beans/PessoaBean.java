@@ -1,4 +1,4 @@
-package com.teamfinder.BEANS;
+package com.teamfinder.beans;
 
 import java.io.Serializable;
 
