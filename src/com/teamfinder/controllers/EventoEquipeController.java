@@ -1,5 +1,5 @@
 package com.teamfinder.controllers;
 
-public class LiderController {
+public class EventoEquipeController {
     
 }

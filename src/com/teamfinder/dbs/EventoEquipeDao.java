@@ -1,5 +1,5 @@
 package com.teamfinder.dbs;
 
-public class LiderDao {
+public class EventoEquipeDao {
     
 }

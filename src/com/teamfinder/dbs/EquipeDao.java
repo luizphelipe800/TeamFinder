@@ -26,8 +26,9 @@ public class EquipeDao {
 
         while(result.next()){
             EquipeBean equipe = new EquipeBean(
-                result.getInt(1), 
-                result.getString(2)
+                result.getInt(1),
+                result.getString(2),
+                result.getInt(3)
             );
 
             equipes.add(equipe);

@@ -2,13 +2,13 @@ package com.teamfinder.beans;
 
 import java.io.Serializable;
 
-public class EventoEquipe  implements Serializable{
+public class EventoEquipeBean  implements Serializable{
     
     private int id, eventoId, equipeId;
     private EventoBean evento;
     private EquipeBean equipe;
 
-    public EventoEquipe (int idl, int eventoId, int equipeId, String nomel){
+    public EventoEquipeBean (int idl, int eventoId, int equipeId, String nomel){
         this.id = idl;
         this.eventoId = eventoId;
         this.equipeId = equipeId;
