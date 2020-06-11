@@ -21,7 +21,7 @@ create table pe_eq_pessoa_equipe (
 
 create table eq_equipe (
 	eq_id int NOT NULL AUTO_INCREMENT,
-	nome varchar(20) not null,
+	eq_nome varchar(20) not null,
 	PRIMARY KEY (eq_id)
 );
 
@@ -43,6 +43,7 @@ create table en_endereco (
 
 create table ev_evento (
 	ev_id int NOT NULL AUTO_INCREMENT,
+    ev_nome varchar(20) UNIQUE NOT NULL,
 	ev_endereco_id int NOT NULL,
 	ev_equipe_id int not null,
 	PRIMARY KEY (ev_id)

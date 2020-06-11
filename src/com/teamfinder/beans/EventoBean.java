@@ -2,14 +2,16 @@ package com.teamfinder.beans;
 
 import java.io.Serializable;
 
-class EventoBean implements Serializable{
+public class EventoBean implements Serializable{
 
     private int id, enderecoId, equipeId;
+    private String nome;
     private EnderecoBean endereco;
     private EquipeBean equipe;
 
-    public EventoBean(int id, int enderecoId, int equipeId){
+    public EventoBean(int id, String nome, int enderecoId, int equipeId){
         this.id = id;
+        this.nome = nome;
         this.enderecoId = enderecoId;
         this.equipeId = enderecoId;
     }
@@ -20,6 +22,14 @@ class EventoBean implements Serializable{
 
     public int getId(){
         return this.id;
+    }
+
+    public void setNome(String nome){
+        this.nome = nome;
+    }
+
+    public String getNome(){
+        return this.nome;
     }
 
     public void setEnderecoId(int enderecoId){
