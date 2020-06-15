@@ -55,7 +55,7 @@ public class EventoDao {
     }
 
     public void inserir(EventoBean evento) throws SQLException {
-        String sql = "INSERT INTO ev_evento (ev_nome, ev_endereco_id, ev_equipe_id) VALUES (?, ?, ?)";
+        String sql = "INSERT INTO ev_evento (ev_nome, ev_endereco_id, ev_pessoa_id) VALUES (?, ?, ?)";
         PreparedStatement stmt = banco.prepareStatement(sql, Statement.NO_GENERATED_KEYS);
 
         stmt.setString(1, evento.getNome());

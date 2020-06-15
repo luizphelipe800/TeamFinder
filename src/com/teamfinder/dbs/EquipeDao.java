@@ -47,16 +47,18 @@ public class EquipeDao {
         while(result.next()){
             equipe.setId(result.getInt(1));
             equipe.setNome(result.getString(2));
+            equipe.setPessoaId(result.getInt(3));
         }
 
         return equipe;
     }
 
     public void inserir (EquipeBean equipe) throws SQLException {
-        String sql = "INSERT INTO eq_equipe (eq_nome) VALUE (?)";
+        String sql = "INSERT INTO eq_equipe (eq_nome, eq_pessoa_id) VALUE (?, ?)";
         PreparedStatement stmt = banco.prepareStatement(sql, Statement.NO_GENERATED_KEYS);
 
         stmt.setString(1, equipe.getNome());
+        stmt.setInt(2, equipe.getPessoaId());
 
         stmt.executeUpdate();
         stmt.close();

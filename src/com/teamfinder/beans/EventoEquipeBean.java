@@ -8,7 +8,7 @@ public class EventoEquipeBean  implements Serializable{
     private EventoBean evento;
     private EquipeBean equipe;
 
-    public EventoEquipeBean (int idl, int eventoId, int equipeId, String nomel){
+    public EventoEquipeBean (int idl, int eventoId, int equipeId){
         this.id = idl;
         this.eventoId = eventoId;
         this.equipeId = equipeId;

@@ -6,13 +6,13 @@ public class PessoaBean implements Serializable {
  
     private int id;
     private String nome;
-    private int dt_nascimento;
-    private int rg;
-    private int cpf;
-    private int num_contato;
+    private String dt_nascimento;
+    private String rg;
+    private String cpf;
+    private String num_contato;
 
 
-    public PessoaBean (int idp, String nomep, int dt_nascimentop, int rgp,int cpfp, int num_contatop){
+    public PessoaBean (int idp, String nomep, String dt_nascimentop, String rgp,String cpfp, String num_contatop){
     
         this.id = idp;
         this.nome = nomep;
@@ -52,56 +52,56 @@ public class PessoaBean implements Serializable {
     /**
      * @return the dt_nascimento
      */
-    public int getDt_nascimento() {
+    public String getDt_nascimento() {
         return dt_nascimento;
     }
 
     /**
      * @param dt_nascimento the dt_nascimento to set
      */
-    public void setDt_nascimento(int dt_nascimento) {
+    public void setDt_nascimento(String dt_nascimento) {
         this.dt_nascimento = dt_nascimento;
     }
 
     /**
      * @return the rg
      */
-    public int getRg() {
+    public String getRg() {
         return rg;
     }
 
     /**
      * @param rg the rg to set
      */
-    public void setRg(int rg) {
+    public void setRg(String rg) {
         this.rg = rg;
     }
 
     /**
      * @return the cpf
      */
-    public int getCpf() {
+    public String getCpf() {
         return cpf;
     }
 
     /**
      * @param cpf the cpf to set
      */
-    public void setCpf(int cpf) {
+    public void setCpf(String cpf) {
         this.cpf = cpf;
     }
 
     /**
      * @return the num_contato
      */
-    public int getNum_contato() {
+    public String getNum_contato() {
         return num_contato;
     }
 
     /**
      * @param num_contato the num_contato to set
      */
-    public void setNum_contato(int num_contato) {
+    public void setNum_contato(String num_contato) {
         this.num_contato = num_contato;
     }
     
