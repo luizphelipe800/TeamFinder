@@ -5,10 +5,12 @@ use aulaSexta;
 create table pe_pessoa (
 	pe_id int auto_increment,
 	pe_nome varchar(50) not null ,
+	pe_email varchar(50) not null unique,
+	pe_senha varchar(30) not null,
 	pe_dt_nascimento date not null ,
-	pe_rg int(9) not null ,
-	pe_cpf int(12) not null ,
-	pe_num_contato int(11) not null,
+	pe_rg varchar(9) not null ,
+	pe_cpf varchar(12) not null ,
+	pe_num_contato varchar(11) not null,
 	primary key (pe_id)
 );
 

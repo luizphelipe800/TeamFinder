@@ -21,7 +21,7 @@ public class EventoController {
 
         for (EventoBean evento : eventos) {
             EnderecoBean endereco = new EnderecoBean(evento.getEnderecoId(), "", "", 0, "");
-            PessoaBean pessoa = new PessoaBean(evento.getPessoaId(), "", "", "", "", "");
+            PessoaBean pessoa = new PessoaBean(evento.getPessoaId(), "", "", "", "", "", "", "");
 
             evento.setEndereco(enderecoController.buscar(endereco));
             //evento.setPessoa(pessoaController.buscar(pessoa));
@@ -38,7 +38,7 @@ public class EventoController {
         pessoaController = new PessoaController();
         //criando os models para usar como parametro de busca
         EnderecoBean endereco = new EnderecoBean(evento.getEnderecoId(), "", "", 0, "");
-        PessoaBean pessoa = new PessoaBean(evento.getPessoaId(), "", "", "", "", "");
+        PessoaBean pessoa = new PessoaBean(evento.getPessoaId(), "", "", "", "", "", "", "");
 
         evento.setEndereco(enderecoController.buscar(endereco));
         //evento.setPessoa(pessoaController.buscar(pessoa));

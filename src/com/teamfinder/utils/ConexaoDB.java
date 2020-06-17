@@ -10,7 +10,7 @@ public class ConexaoDB {
             Class.forName("com.mysql.jdbc.Driver");
             String url ="jdbc:mysql://localhost:3306/aulaSexta";
             String usuario = "root";
-            String senha = "example";
+            String senha = "teamfinder";
             return DriverManager.getConnection(url,usuario,senha);
         } catch (SQLException e) {
             throw new RuntimeException(e);

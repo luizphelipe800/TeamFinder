@@ -6,20 +6,24 @@ public class PessoaBean implements Serializable {
  
     private int id;
     private String nome;
+    private String email;
+    private String senha;
     private String dt_nascimento;
     private String rg;
     private String cpf;
     private String num_contato;
 
 
-    public PessoaBean (int idp, String nomep, String dt_nascimentop, String rgp,String cpfp, String num_contatop){
+    public PessoaBean (int id, String nome, String email, String senha, String dt_nascimento, String rg,String cpf, String num_contato){
     
-        this.id = idp;
-        this.nome = nomep;
-        this.dt_nascimento = dt_nascimentop;
-        this.rg = rgp;
-        this.cpf = cpfp;
-        this.num_contato = num_contatop;
+        this.id = id;
+        this.nome = nome;
+        this.email = email;
+        this.senha = senha;
+        this.dt_nascimento = dt_nascimento;
+        this.rg = rg;
+        this.cpf = cpf;
+        this.num_contato = num_contato;
 
     }
 
@@ -47,6 +51,22 @@ public class PessoaBean implements Serializable {
      */
     public void setNome(String nome) {
         this.nome = nome;
+    }
+
+    public void setEmail(String email){
+        this.email = email;
+    }
+
+    public String getEmail(){
+        return this.email;
+    }
+
+    public void setSenha(String senha){
+        this.senha = senha;
+    }
+
+    public String getSenha(){
+        return this.senha;
     }
 
     /**
